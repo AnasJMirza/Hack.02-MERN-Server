@@ -17,6 +17,11 @@ const PostSchema = new mongoose.Schema(
       required: true,
     },
 
+    mobile: {
+      type: Number,
+      required: true,
+    },
+
     imgUrl: {
       type: String,
       default:

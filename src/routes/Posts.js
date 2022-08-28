@@ -6,5 +6,6 @@ const router = express.Router();
 
 router.get("/random", getPosts);
 router.post("/", addPosts);
+router.get("/search", );
 
 export default router;
