@@ -2,6 +2,8 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import postRoutes from './src/routes/Posts.js'
+import authRoutes from './src/routes/Auth.js';
 // connection to db
 import { connect } from './src/config/db.js';
 
@@ -18,6 +20,10 @@ const port = 5000;
 
 
 app.use(express.json());
+
+// app.use('/api/auth', authRoutes)
+app.use('/api/posts', postRoutes)
+
 
 
 
